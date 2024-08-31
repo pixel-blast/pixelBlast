@@ -2,6 +2,11 @@ _**Welcome to Pixel Blast**_
 
 This is a console based assistant based on python with some of its libraries
 
+_**Authentication**_
+
+Username = Admin
+
+Password = pass101
 
 _**Run this code in terminal**_
 
