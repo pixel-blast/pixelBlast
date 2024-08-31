@@ -105,14 +105,15 @@ else:
     print('Proceeding to Pixel Blast')
     talk('Proceeding to Pixel Blast')
 
-user_name = str(input('Enter Username:  '))
-password = str(input('Enter password:  '))
+print('Authentication')
+user_name = str(input('Enter Username: '))
+password = str(input('Enter password: '))
 
 def main():
     while True:
         # The Pixel Blast
         talk('How can I help you?')
-        queryRaw = str(input('How can I help you?  '))
+        queryRaw = str(input('How can I help you? '))
         query = queryRaw.lower()
 
         if 'play' in query:
@@ -125,7 +126,7 @@ def main():
 
         elif 'google' in query:
                 # Searching things on google using PyWhatKit
-                text = str(input('What do you want to search today:  '))
+                text = str(input('What do you want to search today: '))
                 pywhatkit.search(text)
 
         def calc():
@@ -141,7 +142,7 @@ def main():
             print('Press 1 to go to Basic Calculator')
             print('Press 2 to go to the Formula section')
             talk("Tell me the number and I will teleport you to that world")
-            calRedirect = int(input("Tell me the number and I will teleport you to that world?  "))
+            calRedirect = int(input("Tell me the number and I will teleport you to that world? "))
 
             def basic_console():
                 print("Basic Calculator Py")
@@ -149,11 +150,11 @@ def main():
                 talk(' ')
                 print('Available Operators  +  -  /  *')
                 talk('Available Operators are Add, Subtract, Multiply and Divide.')
-                o = input("Choose Operator")
+                o = input("Choose Operator: ")
 
                 def add():
-                    first_num = int(input("Enter First Number  "))
-                    b = int(input("Enter Second Number  "))
+                    first_num = int(input("Enter First Number: "))
+                    b = int(input("Enter Second Number: "))
                     a_var = (b + first_num)
                     print(a_var)
                     talk(a_var)
@@ -162,8 +163,8 @@ def main():
                     add()
 
                 def sub():
-                    first = int(input("Enter First Number  "))
-                    b = int(input("Enter Second Number  "))
+                    first = int(input("Enter First Number: "))
+                    b = int(input("Enter Second Number: "))
                     print(b - first)
                     talk(b - first)
 
@@ -171,8 +172,8 @@ def main():
                     sub()
 
                 def mul():
-                    first_num = int(input("Enter First Number  "))
-                    b = int(input("Enter Second Number  "))
+                    first_num = int(input("Enter First Number: "))
+                    b = int(input("Enter Second Number: "))
                     print(b * first_num)
                     talk(b * first_num)
 
@@ -180,8 +181,8 @@ def main():
                     mul()
 
                 def div():
-                    first = int(input("Enter First Number  "))
-                    b = int(input("Enter Second Number  "))
+                    first = int(input("Enter First Number: "))
+                    b = int(input("Enter Second Number: "))
                     print(b / first)
                     talk(b / first)
 
@@ -208,7 +209,7 @@ def main():
                 acer = str(input("Which formula do you wish to execute ? "))
 
                 def carea():
-                    ca = float(input("Tell me the radius of the Circle"))
+                    ca = float(input("Tell me the radius of the Circle: "))
                     p = 22 / 7
                     ans = p * ca ** 2
                     print(ans)
@@ -218,7 +219,7 @@ def main():
                     carea()
 
                 def cperi():
-                    cp = float(input("Tell me the radius of the Circle"))
+                    cp = float(input("Tell me the radius of the Circle: "))
                     cpans = 22 / 7
                     pans = 2 * cpans * cp
                     print(pans)
@@ -228,7 +229,7 @@ def main():
                     cperi()
 
                 def sqarea():
-                    sa = float(input("Tell me side length of the square"))
+                    sa = float(input("Tell me side length of the square: "))
                     cans = sa * sa
                     print(cans)
                     talk(int(cans))
@@ -237,7 +238,7 @@ def main():
                     sqarea()
 
                 def sqperi():
-                    spe = float(input("Tell me side length of the square"))
+                    spe = float(input("Tell me side length of the square: "))
                     spans = spe * 4
                     print(spans)
                     talk(int(spans))
@@ -246,8 +247,8 @@ def main():
                     sqperi()
 
                 def recarea():
-                    rab = float(input("Tell my the Breadth of the Rectangle"))
-                    ral = float(input("Tell my the Length of the Rectangle"))
+                    rab = float(input("Tell my the Breadth of the Rectangle: "))
+                    ral = float(input("Tell my the Length of the Rectangle: "))
                     rans = rab * ral
                     print(rans)
                     talk(int(rans))
@@ -256,8 +257,8 @@ def main():
                     recarea()
 
                 def recperi():
-                    rperb = float(input("Tell my the Breadth of the Rectangle"))
-                    rperl = float(input("Tell my the Length of the Rectangle"))
+                    rperb = float(input("Tell my the Breadth of the Rectangle: "))
+                    rperl = float(input("Tell my the Length of the Rectangle: "))
                     rpans = (rperb + rperl) * 2
                     print(rpans)
                     talk(int(rpans))
@@ -266,8 +267,8 @@ def main():
                     recperi()
 
                 def profit():
-                    sp = int(input('Enter Selling Price'))
-                    cp = int(input('Enter Cost Price'))
+                    sp = int(input('Enter Selling Price: '))
+                    cp = int(input('Enter Cost Price: '))
                     fin = sp - cp
                     print(fin)
                     talk(int(fin))
@@ -276,8 +277,8 @@ def main():
                     profit()
 
                 def loss():
-                    sp = int(input('Enter Selling Price'))
-                    cp = int(input('Enter Cost Price'))
+                    sp = int(input('Enter Selling Price: '))
+                    cp = int(input('Enter Cost Price: '))
                     fin = cp - sp
                     print(fin)
                     talk(int(fin))
@@ -286,8 +287,8 @@ def main():
                     loss()
 
                 def profitper():
-                    profit_1 = int(input('Enter Profit'))
-                    cp = int(input('Enter Cost Price'))
+                    profit_1 = int(input('Enter Profit: '))
+                    cp = int(input('Enter Cost Price: '))
                     profit_1 = (profit_1 / cp) * 100
                     print(profit_1 + '%')
                     talk(int(profit_1 + '%'))
@@ -296,8 +297,8 @@ def main():
                     profitper()
 
                 def losper():
-                    loss_1 = int(input('Enter Loss'))
-                    cp = int(input('Enter Cost Price'))
+                    loss_1 = int(input('Enter Loss: '))
+                    cp = int(input('Enter Cost Price: '))
                     profit_2 = (loss_1 / cp) * 100
                     print(profit_2 + '%')
                     talk(int(profit_2 + "%"))
@@ -316,7 +317,7 @@ def main():
             print('Table Generator')
             talk('Table Generator')
             numbers = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10']
-            num = int(input('Which Table do you want'))
+            num = int(input('Which Table do you want: '))
             for number in numbers:
                 result = num * int(number)
                 resultString = (str(result))
@@ -331,7 +332,7 @@ def main():
         elif 'search' in query:
             # Gets information from wikipedia
             search = query.replace('search ', '')
-            info_line = int(input('How many Lines of Info do you Want:  '))
+            info_line = int(input('How many Lines of Info do you Want: '))
             info = wikipedia.summary(search, info_line)
             print(info)
 
@@ -383,7 +384,7 @@ def main():
 
         elif 'tp' in query:
             # Just prints what you type
-            tp = str(input('What do you want me to print'))
+            tp = str(input('What do you want me to print: '))
             print(tp)
 
         elif 'birthday' in query:
@@ -396,7 +397,7 @@ def main():
             Songs_Avai = ['Happy Birthday', 'Demon Slayer 1', 'Demon Slayer 2', 'Demon Slayer 3', 'Demon Slayer 4', 'Demon Slayer 5', 'Tauba Tauba', 'The Boys', 'Naadaniya']
             for songs in Songs_Avai:
                 print(songs)
-            songRaw = str((input('Which song do you want to play:  ')))
+            songRaw = str((input('Which song do you want to play: ')))
             songtreated = songRaw.lower()
 
             if 'tauba' in songRaw:
@@ -434,7 +435,7 @@ def main():
 
         elif 'exit' in query:
             # Closes Pixel Blast
-            exit_prompt_raw = str(input('Do you really want to exit:  '))
+            exit_prompt_raw = str(input('Do you really want to exit: '))
             exit_prompt = exit_prompt_raw.lower()
             if 'yes' in exit_prompt:
                 print('Thank you for using Pixel Blast')
@@ -467,8 +468,8 @@ if user_name == 'admin' and password =='pass101':
     main()
 else:
     print('Login failed, try again')
-    user_name_retry = str(input('Enter Username:  '))
-    password_retry = str(input('Enter password:  '))
+    user_name_retry = str(input('Enter Username: '))
+    password_retry = str(input('Enter password: '))
     if user_name_retry == 'admin' and password_retry =='pass101':
         print('Login Successful')
         main()
