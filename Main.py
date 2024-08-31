@@ -67,6 +67,7 @@ def print_commands():
     print('Joke - Tells you a joke')
     print('Search - Gets you information from wikipedia')
     print('Play - Play things on youtube directly from Pixel Blast')
+    print('Google - Search things from google')
 
 def time():
     # Tells current time
