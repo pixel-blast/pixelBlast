@@ -68,6 +68,7 @@ def print_commands():
     print('Search - Gets you information from wikipedia')
     print('Play - Play things on youtube directly from Pixel Blast')
     print('Google - Search things from google')
+    print('Command - Prints Available commands')
 
 def time():
     # Tells current time
@@ -448,6 +449,10 @@ def main():
             pygame.mixer.music.stop()
             print('Song Stopped')
 
+        elif 'command' in query:
+            # Prints Available commands
+            print_commands()
+            
         else:
             # To retry not recognised commands
             print('Unrecognised command please refer to command list')
