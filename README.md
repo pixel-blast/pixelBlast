@@ -37,4 +37,6 @@ Play - Play things on youtube directly from Pixel Blast
 
 Google - Search things from google
 
+Command = Prints Available commands 
+
 _**That's it folks! Now enjoy Pixel Blast**_
